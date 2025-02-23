@@ -50,9 +50,6 @@ Ensure you have the following installed:
 -  **More AI Models** → Add support for GPT-4 and other transformers.
 -  **Better File Processing** → Improve handling of large PDF and DOCX files.
 
-## 📝 License
-This project is open-source and available under the **MIT License**.
-
 ## 🌟 Contributors
 - **Nguyen Vu Gia Huy**
 - **Lai Phu Huy**
