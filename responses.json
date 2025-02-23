@@ -1,0 +1,77 @@
+[
+    {
+        "intent": {
+            "tags": "greeting",
+            "patterns": [
+                "(?i)hi[.?!]*$",
+                "(?i)hello[.?!]*$",
+                "(?i)how\\sare\\syou[.?!]*$"
+            ]
+        },
+        "responses": ["Hello there!", "Hello!", "Good to see you!", "Hi there, how can I help?"]
+    },
+    {
+        "intent": {
+            "tags": "paraphrase",
+            "patterns": [
+                "(?i)\\b(paraphrase|paraphrasing|paraphrased)\\b"
+            ]
+        },
+        "responses": [
+            "Sure, here's the paraphrased version "
+        ]
+    },
+    {
+        "intent": {
+            "tags": "summarize",
+            "patterns": [
+                "(?i)\\b(summarize|summarized|summarizing|summary)\\b"
+            ]
+        },
+        "responses": [
+            "Sure, here's the summarization "
+        ]
+    },
+    {
+        "intent": {
+            "tags": "questioning",
+            "patterns": [
+                "(?i)who\\sare\\syou[.?!]*$"
+            ]
+        },
+        "responses": [
+            "I am a bot that supports summarizing and paraphrasing documents."
+        ]
+    },
+    {
+        "intent": {
+            "tags": "creator_questioning",
+            "patterns": [
+                "(?i)who\\s(made|make|create|created)\\syou?"
+            ]
+        },
+        "responses": [
+            "I'm designed for academic purposes. I was created by multiple people."
+        ]
+    },
+    {
+        "intent": {
+            "tags": "default",
+            "patterns": []
+        },
+        "responses": [
+            "Sorry. I don't understand. I'm not supported to answer this question."
+        ]
+    },
+    {
+        "intent": {
+            "tags": "read",
+            "patterns": [
+                "(?i)\\b(read|reading)\\b"
+            ]
+        },
+        "responses": [
+            "Sure, Here's the document: "
+        ]
+    }
+]

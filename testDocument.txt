@@ -1,0 +1,9 @@
+The launch of a new chatbot by Chinese artificial intelligence firm DeepSeek triggered a plunge in US tech stocks as it appeared to perform as well as OpenAI’s ChatGPT and other AI models, but using fewer resources.
+
+By Monday, DeepSeek’s AI assistant had rapidly overtaken ChatGPT as the most popular free app in Apple’s US and UK app stores. Despite its popularity with international users, the app appears to censor answers to sensitive questions about China and its government.
+
+Chinese generative AI must not contain content that violates the country’s “core socialist values”, according to a technical document published by the national cybersecurity standards committee. That includes content that “incites to subvert state power and overthrow the socialist system”, or “endangers national security and interests and damages the national image”.
+
+Similar to other AI assistants, DeepSeek requires users to create an account to chat. Its interface is intuitive and it provides answers instantaneously, except for occasional outages, which it attributes to high traffic.
+
+We asked DeepSeek’s AI questions about topics historically censored by the great firewall. Here’s how its responses compared to the free versions of ChatGPT and Google’s Gemini chatbot.

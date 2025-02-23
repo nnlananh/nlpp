@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Paraphrase </title>
+    <link rel="stylesheet" href="../static/styles.css"/>
+</head>
+<body>
+    <h1>Upload A Document</h1>
+    <div class="chat-container">
+        <div class="messages" id="messages"></div>
+        <form id="messageForm" method="POST">
+            <input type="text" name="message" placeholder="Type a message..." autocomplete="off">
+            <input type="file" name="file" accept=".pdf, .doc, .docx, .txt">
+            <select name="model" id="model">
+                <option value="t5-small" selected>T5-Small</option>
+                <option value="t5-base">T5-Base</option>
+                <option value="t5-large">T5-Large</option>
+            </select>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script>
+        var socket = io();
+        var uploadMessage = document.getElementById("uploadMessage")
+        var messages = document.getElementById("messages")
+        var messageForm = document.getElementById("messageForm")
+        var fileInput = document.getElementById("fileInput")
+
+        messageForm.addEventListener("submit", (e) => {
+            e.preventDefault()
+            
+            // socket.send(message)
+            const formData = new FormData(event.target)
+            if (formData.get("message") == null) return
+
+            messages.innerHTML += "<p><strong>You:</strong> " + formData.get("message") + "</p>";
+            uploadMessage.textContent = ""
+
+            fetch("/chat", { 
+                method: 'POST',
+                body: formData,
+            }).then(response => response.json())
+            .then(data => {
+                messages.innerHTML += "<p><strong>Bot:</strong> " + data.response + "</p>";
+            }).catch(error => {
+                messages.innerHTML += "<p style='color: red;'><strong>Bot:</strong>An error has occured, please try again.</p>"
+            })
+        })
+    </script>
+</body>
+</html>
