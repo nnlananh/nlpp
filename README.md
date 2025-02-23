@@ -1,5 +1,4 @@
-# 📚 Chatbot for Summarizing and Paraphrasing Documents  
-
+# 📚 Document Paraphrase & Summarization Chatbot
 ## 📌 Introduction  
 This chatbot is designed to help users **summarize** and **paraphrase** text efficiently. By leveraging **advanced NLP models**, it saves time when reading long documents and enhances content comprehension.
 
@@ -27,8 +26,7 @@ The chatbot utilizes **Hugging Face Transformers** for Natural Language Processi
 ✅ **Multiple AI Models** → Users can choose different NLP models.  
 ✅ **User-Friendly UI** → Clean and simple interface for easy interaction.  
 
-## 🏗 Installation & Setup  
-### **Prerequisites**  
+## 🏗 Requirement 
 Ensure you have the following installed:  
 - Python **3.7+**  
 - Flask (for web app)  
@@ -48,9 +46,9 @@ Ensure you have the following installed:
 - **HTML, CSS, JavaScript** – Frontend UI
 
 ## 📌 Future Improvements
-- 🔹 **Multilingual Support** → Allow summarization in different languages.
-- 🔹 **More AI Models** → Add support for GPT-4 and other transformers.
-- 🔹 **Better File Processing** → Improve handling of large PDF and DOCX files.
+-  **Multilingual Support** → Allow summarization in different languages.
+-  **More AI Models** → Add support for GPT-4 and other transformers.
+-  **Better File Processing** → Improve handling of large PDF and DOCX files.
 
 ## 📝 License
 This project is open-source and available under the **MIT License**.
