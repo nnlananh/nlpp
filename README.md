@@ -36,24 +36,28 @@ Ensure you have the following installed:
 - Other dependencies (see `requirements.txt`) 
 
 ## 🚀 Usage
-Upload a document (PDF, DOC, or TXT).
-Choose a model (Summarization or Paraphrasing).
-Click "Send" to process and receive the result.
-🛠 Technologies Used
-Python (Flask)
-Hugging Face Transformers (NLP models)
-HTML, CSS, JavaScript (Frontend UI)
+1. **Upload a document** (PDF, DOC, or TXT).
+2. **Choose a model**:
+   - Summarization
+   - Paraphrasing
+3. **Click "Send"** to process and receive the result.
+
+## 🛠 Technologies Used
+- **Python (Flask)** – Backend framework
+- **Hugging Face Transformers** – NLP models
+- **HTML, CSS, JavaScript** – Frontend UI
 
 ## 📌 Future Improvements
-🔹 Multilingual Support → Allow summarization in different languages.
-🔹 More AI Models → Add support for GPT-4 and other transformers.
-🔹 Better File Processing → Improve handling of large PDF and DOCX files.
+- 🔹 **Multilingual Support** → Allow summarization in different languages.
+- 🔹 **More AI Models** → Add support for GPT-4 and other transformers.
+- 🔹 **Better File Processing** → Improve handling of large PDF and DOCX files.
 
 ## 📝 License
-This project is open-source and available under the MIT License.
+This project is open-source and available under the **MIT License**.
 
 ## 🌟 Contributors
-Nguyen Vu Gia Huy
-Lai Phu Huy
-Nguyen Nu Lan Anh
-Trinh Quang Minh
+- **Nguyen Vu Gia Huy**
+- **Lai Phu Huy**
+- **Nguyen Nu Lan Anh**
+- **Trinh Quang Minh**
+
